@@ -20,7 +20,7 @@ import static org.hamcrest.Matchers.hasValue;
 @RunWith(SerenityRunner.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class StoreCRUDTestWithSteps extends TestBase {
-    static String name = "Naren" + TestUtils.getRandomValue();
+    static String name = "Kamal" + TestUtils.getRandomValue();
     static String type = "sendBox"  + TestUtils.getRandomValue();
     static String address = "A"  + TestUtils.getRandomValue();
     static String address2 = "The Chine"  + TestUtils.getRandomValue();
@@ -55,7 +55,7 @@ public class StoreCRUDTestWithSteps extends TestBase {
     @Title("Update store by store ID")
     @Test
     public void test003() {
-        name = "Krishna" + TestUtils.getRandomValue();
+        name = "Kanaiya" + TestUtils.getRandomValue();
         type = "OFF-Licence" + TestUtils.getRandomValue();
         steps.updateStoreById(storeId, name, type, address, address2, city, state, zip, lat, lng, hours).statusCode(200);
 

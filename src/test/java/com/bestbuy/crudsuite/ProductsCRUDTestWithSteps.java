@@ -57,7 +57,7 @@ public class ProductsCRUDTestWithSteps extends TestBase {
     @Title("Update product by Product ID")
     @Test
     public void test003() {
-        name = "Asha" + TestUtils.getRandomValue();
+        name = "Kamal" + TestUtils.getRandomValue();
         type = "Chargeable" + TestUtils.getRandomValue();
         steps.updateProductById(productId, name, type, price, upc, shipping, description,
                 manufacturer, model, image, url).statusCode(200);
